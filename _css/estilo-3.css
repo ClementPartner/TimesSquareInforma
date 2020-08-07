@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+    font-family: Arial, sans-serif;
+
+	/* 	
+		background-color: yellowgreen;
+		background-color: rgb(35, 137, 195);
+
+		Matiz, saturação e luminosidade = hsl(x, y%, z%)
+		Matiz, saturação, luminosidade e alfa = hsla(x, y%, z%, 0 a 1)
+
+		background-image: url("../__cliente/_imagens/_fundos/aco_escovado.jpg");
+
+		color: #ald3ef;
+	*/
+
+	background-color: hsl(165, 81%, 93%);
+
+	color: rgba(0, 0, 0, 0.9); /* canal alfa: grau de transparência. */
+}
+
+#interface {
+	max-width: 900px;
+	margin: 5px auto 0px auto; /* auto para direira e esquerda. */
+	padding: 0 0 0 0;
+}
+
+#logotipo {
+	width: 200px;
+	height: 150px;
+	float: left;
+	padding: 10px 10px 10px 0px;
+}
+
+
+.navbar {
+	overflow: hidden;
+	//background-color: #333;
+	background-color: inherit;
+}
+
+.navbar a {
+	color: white;
+	float: left;
+	font-size: 16px;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	color: white;
+	background-color: inherit;
+	padding: 16px;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	font-family: inherit;
+	margin: 0;
+	cursor: pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+	background-color: red;
+}
+
+.dropdown-content {
+	display: none;
+	padding-bottom: 10px;
+	position: absolute;
+	background-color: blue;
+	//background-color: inherit;
+	min-width: 120px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+	overflow: auto;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.show {
+	display: block;
+}
+
+@media screen and (max-width: 600px) {
+	.navbar a, .navbar button {
+		float: none;
+		width: max-width;
+	}
+	.dropdown-content {
+		padding-right: 10px;
+	}
+}
+
+.asteristico{
+  color:#F00;
+}
+
+.direita {
+    text-align: right;
+}
+
+.img-index {
+	width: 166px;
+	height: 200px;
+	float: left;
+}
+
+.estilo-wine, .estilo-hover-wine:hover{
+	color:#fff!important;
+	background-color:#7a3b2e!important
+}
+
+.estilo-green, .estilo-hover-green:hover{
+	color:#fff!important;
+	background-color:#0B3B0B!important
+}
+
+.estilo-margin-leftright-4{margin-right:4px; margin-left:4px}
+
+.estilo-margin-leftright-8{margin-right:8px; margin-left:8px}

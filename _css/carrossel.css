@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#myCarousel {
+	max-width: 1200px;
+	max-height: 800px;
+	margin: auto;
+	display: block;
+}
+
+/*----------------------------------*/
+@media screen and (max-width: 900px) {
+	#myCarousel {width: 100%;}
+}
+/*----------------------------------*/

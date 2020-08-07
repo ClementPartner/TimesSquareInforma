@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+#corpo-fale-conosco {
+	display: block;
+	padding: 0;
+}
+
+form {
+    width: 540px;
+    margin: auto;
+	background-color: #fff;
+}
+
+fieldset {
+    border-color: #4CAF50;
+    margin: 10px;
+}
+
+fieldset#sexo {
+    width: 150px;
+    margin: 0 auto 0 auto;
+}
+
+legend {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+label {
+    padding-left: 0px;
+    margin-left: 5px;
+	color: #000;
+}
+
+input, output, textarea, select {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+	color: #000;
+    background-color: rgba(255,255,255,0.8);
+}
+
+input:hover, textarea:hover, select:hover {
+    background-color: #dddddd;
+}
+
+input:focus, textarea:focus, select:focus {
+    background-color: #eee;
+}
+
+.email-enviado {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	font-style: italic;
+	color: yellow;
+	background-color: orange;
+}
+	
+/* os tais 95% 95% abaixo referem-se à localização do ícone em relação
+    ao tamanho do fieldset: 95% a direita e abaixo !!!
+ */
+#usuario{
+    background: url("../__cliente/_imagens/icone-usuario.png") no-repeat 95% 95%;
+}
+
+#endereco{
+    background: url("../__cliente/_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+
+#mensagem{
+    background: url("../__cliente/_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+#pedido{
+    background: url("../__cliente/_imagens/icone-pedido.png") no-repeat 95% 95%;
+}

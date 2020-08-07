@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#idMsg {
+	color: white;
+	background-color: #330066;
+	font-size: 12pt;
+	padding: 5px;
+	margin-bottom: 15px;
+	//display: none;
+	display: block;
+	text-align: center;
+}
+
+input, select {
+	width: 220px;
+}
+
+.p-linha {
+	color: #000;
+	font-size: 20px;
+	margin: 0 0 0 93px;
+	display: block;
+}

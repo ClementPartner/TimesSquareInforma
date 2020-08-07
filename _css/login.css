@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+.mensagem {
+    color: yellow;
+	background-color: red;
+	font-size: 20px;
+	padding-bottom: 6px;
+}
+
+.incluir-usuario {
+	color: black;
+	background-color: white;
+	font-size: 20px;
+    padding: 5px 12px;
+	text-decoration: none;
+}
+
+input#idEmail{
+    width: 220px;
+}
+
+.login-container {
+	margin: 10px 10px -16px 10px;
+	font-size: 20px;
+}
+
+.login-container a:hover {
+	color: black;
+	background-color: #ccc;
+}
+
+.login-cadastro {
+	background-color: #666666;
+	margin: 20px 10px -6px 10px;
+	padding: 10px 10px 0 10px;
+	font-size: 20px;
+}
+
+.login-cadastro a {
+	color: white;
+	background-color: #330066;
+}
+
+.login-nivel5 {
+	background-color: orange;
+	margin: 20px 10px -6px 10px;
+	padding: 10px 10px 0 10px;
+	font-size: 20px;
+}
+
+.botao-home {
+	color: white;
+	background-color: black;
+	text-decoration: none;
+	padding: 8px 16px;
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	border: none;
+
+	//width:auto;
+	width: 100%;
+
+	//display: block;
+	display: inline-block;
+	//float: left;
+
+	vertical-align: middle;
+	overflow: hidden;
+	text-align: center;
+
+	cursor: pointer;
+
+	white-space: nowrap;
+	
+	outline:0;
+}
+
+.botao-nivel5 {
+	color: white;
+	background-color: red;
+	text-decoration: none;
+	padding: 8px 16px;
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	border: none;
+
+	//width:auto;
+	width: 100%;
+
+	//display: block;
+	display: inline-block;
+	//float: left;
+
+	vertical-align: middle;
+	overflow: hidden;
+	text-align: center;
+
+	cursor: pointer;
+
+	white-space: nowrap;
+	
+	outline:0;
+}
+
+#idLembrar {
+	font-size: 20px;
+	width: 220px;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	margin: 10px auto;
+}
+
+/* Texto em vermelho e "X" quando está errado. */
+.naolembrarse {
+	color: red;
+}
+
+.naolembrarse:before {
+	position: relative;
+	padding-right: 8px;
+	content: "✖";
+}
+
+/* Texto em verde e check OK quando está certo. */
+.lembrarse {
+	color: blue;
+}
+
+.lembrarse:before {
+	position: relative;
+	padding-right: 8px;
+	content: "✔";
+}

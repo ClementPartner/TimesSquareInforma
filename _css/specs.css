@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+#conteudo {
+    width: 1000px;
+    margin: auto;
+}
+
+.tamanho-img-glass {
+    width: 480px;
+}
+
+#frame-specs {
+    width: 425px;
+    height: 290px;
+    border: none;
+    overflow: hidden;
+}
+
+#frame-specs::-webkit-scrollbar {
+    display: none;
+}
+
+#frame-specs::-moz-viewport-scroll{
+    display: none;
+}

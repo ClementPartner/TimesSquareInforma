@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+    font-family: Arial, sans-serif;
+
+	/* 	
+		background-color: yellowgreen;
+		background-color: rgb(35, 137, 195);
+
+		Matiz, saturação e luminosidade = hsl(x, y%, z%)
+		Matiz, saturação, luminosidade e alfa = hsla(x, y%, z%, 0 a 1)
+
+		background-image: url("../__cliente/_imagens/_fundos/aco_escovado.jpg");
+
+		color: #ald3ef;
+	*/
+
+	background-color: hsl(165, 81%, 93%);
+
+	color: rgba(0, 0, 0, 0.9); /* canal alfa: grau de transparência. */
+}
+
+#interface {
+	max-width: 900px;
+	margin: 5px auto 0px auto; /* auto para direira e esquerda. */
+	padding: 0 0 0 0;
+}
+
+#logotipo {
+	width: 200px;
+	height: 150px;
+	float: left;
+	padding: 10px 10px 10px 0px;
+}
+
+#cabecalho {
+	height: 120px;
+	padding: 10px 0 50px 10px;
+	/* border-bottom: solid 1px #606060; */
+	background-color: green;
+	/* background-image: url("../_fundos/aco_escovado.jpg"); */
+	/* background: url("../__cliente/_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#cabecalho h1 {
+	font-family: sans-serif;
+	font-size: 30pt;
+	color: gray;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	padding: 0px;
+	margin-left: 5px;
+	margin-bottom: 0px;
+}
+
+#cabecalho h2 {
+	/* Exemplo padrão: font-family: Arial, sans-serif; */
+
+	/* Esta fonte abaixo foi importada lá em cima, 8ª linha. */
+	font-family: 'Indie Flower', cursive;
+	font-size: 15pt;
+	color: #ccc;
+	padding: 0px;
+	margin: 0px 0px 0px 5px;
+}
+	
+#icone-menu {
+	position: absolute;
+	left: 850px;
+	top: 55px;
+}
+
+.menu-principal {
+	display: block; /* Para poder flutuar tem que ser block. */
+}
+
+#menu-principal h1 {
+	display: none;
+}
+
+#menu-principal ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px; /* o navegador tem uma margem de segurança = 0px. */
+	left: 400px;
+}
+
+#menu-principal li {
+	display: inline-block;
+	background-color: #dddddd; /*cinza claro. */
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+#menu-principal li.sair {
+	background-color: red;
+}
+
+#menu-principal li:hover {
+	background-color: #606060; /* cinza escuro. */
+}
+
+#menu-principal a {
+	color: #000000;
+	text-decoration: none; /* retirar o sublinhado do link. */
+}
+
+#menu-principal a.sair {
+	color: yellow;
+}
+
+#menu-principal a:hover, #menu-principal a.sair:hover {
+	color: white;
+	text-decoration: underline; /* colocar o sublinhado do link. */
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#corpo {
+	display: block;
+	width: 500px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 10px;
+}
+
+#noticia-principal h2 {
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0 5px 10px;
+    margin: 10px 0 10px 0;
+}
+
+#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+#cabecalho-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
+}
+
+.asteristico{
+  color:#F00;
+}
+
+.direita {
+    text-align: right;
+}
+
+.img-index {
+	width: 166px;
+	height: 200px;
+	float: left;
+}
+
+#lateral {
+	display: block;
+	width: 360px;
+	float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 20px;
+}
+
+#lateral h2 {
+    background-color: #606060;
+    font-size: 12pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+#lateral .img-esquerda {
+	float: left;
+}
+
+#lateral .img-direita {
+	float: right;
+}
+
+/*-----------------------------	
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+-----------------------------*/
+
+.foto-legenda {
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 2px 2px 8px black;
+}
+
+.foto-legenda img {
+	height: 100%;
+	width : 100%;
+}
+
+.foto-legenda figcaption {
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+
+#tab-tecnica {
+	border: 1px solid black;
+	border-spacing: 0px;
+	margin: 0px auto 0px auto;
+}
+
+#tab-tecnica caption {
+	color: #888;
+	font-size: 15pt;
+	font-weight: bolder;
+}
+
+#tab-tecnica caption span {
+	display: block;
+	float: right;
+	color: black;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+
+#tab-tecnica td {
+	border: 1px dashed black;
+	padding: 8px;
+}
+
+#tab-tecnica .ce {
+	color: #fff;
+	background: #606060;
+	text-align: right;
+	font-weight: bold;
+    vertical-align: top;
+}
+
+#tab-tecnica .cd {
+	background-color: #cecece;
+	text-align: left;
+}
+
+#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+#rodape p {
+	text-align: center;
+}
+
+#filme1 {
+	display: block;
+	position: relative;
+	margin: 10px auto 10px auto;
+}
+
+#filme2 {
+	display: block;
+	position: relative;
+	width: 360px;
+	margin: 10px auto 10px auto;
+}
+
+.estilo-wine, .estilo-hover-wine:hover{
+	color:#fff!important;
+	background-color:#7a3b2e!important
+}
+
+.estilo-green, .estilo-hover-green:hover{
+	color:#fff!important;
+	background-color:#0B3B0B!important
+}
+
+.estilo-margin-leftright-4{margin-right:4px; margin-left:4px}
+
+.estilo-margin-leftright-8{margin-right:8px; margin-left:8px}

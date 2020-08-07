@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: FonteMoema;
+	src: url("../_fontes/din-alternate-bold.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+* {
+  box-sizing: border-box;
+}
+
+.accordion {
+	color: white;
+	background-color: #a491a2;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	padding: 14px;
+	cursor: pointer;
+	border: none;
+	border-bottom: solid 1px #ccc;
+	outline: none;
+	//transition: 0.4s;
+}
+
+.accordion:hover {
+	color: black;
+	background-color: #ccc;
+}
+
+.accordion:hover:after {
+	color: black;
+	background-color: #ccc;
+}
+
+.accordion:after {
+	color: white;
+	background-color: #a491a2;
+	content: '+';
+	content: '\002B';
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.active {
+	color: white;
+	background-color: #5b4f5a;
+}
+
+.active:after {
+	color: white;
+	background-color: #5b4f5a;
+	content: "-";
+	content: "\2212";
+}
+
+.inf-panel {
+	color: black;
+	background-color: white;
+	padding: 0 18px;
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.inf-panel-2 {
+	color: black;
+	background-color: white;
+	padding: 0 18px;
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	max-height: auto;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.panel-2 {
+	color: white;
+	background-color: #5b4f5a;
+	padding: 10px 18px;
+	margin-top: 10px;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	outline: none;
+	display: block;
+}
+
+.inf-navbar {
+	background-color: inherit;
+	background-color: #333;
+	background-color: white;
+	overflow: hidden;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.inf-navbar a {
+	color: white;
+	background-color: black;
+	font-size: 16px;
+	padding: 12px;
+	margin: 8px 4px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor:pointer;
+}
+  
+.inf-navbar a:hover {
+	background-color: red;
+}
+
+.sub-titulo {
+	padding-top: 30px;
+}
+
+.ultima-linha-orientacoes {
+	padding-bottom: 50px;
+}
+
+.telefone {
+	color: white;
+	background-color: #5b4f5a;
+	padding: 10px 18px;
+	margin: 10px auto 0 auto;
+	font-size: 35px;
+	text-align: center;
+	width: 300px;
+	outline: none;
+	display: block;
+}

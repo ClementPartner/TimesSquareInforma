@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Arial';
+    //src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+form {
+    display: block;
+    font-family: Arial, sans-serif;
+    width: 300px;
+    margin: auto;
+	padding: 8px;
+    background-color: green;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.imgcontainer {
+    text-align: center;
+    margin-top: 24px;
+}
+
+img.avatar {
+    width: 30%;
+    //border-radius: 50%;
+}
+
+.mensagem {
+    color: yellow;
+    margin-top: 15px;
+}
+
+.incluir-usuario {
+    padding: 5px 8px 5px 8px;
+	color: black;
+	background-color: yellow;
+}
+
+.container {
+    padding: 10px;
+}
+
+p {
+    text-align: left;
+    // margin: 10px;
+}
+
+input{
+    font-size: 12pt;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+input#idEmail{
+    width: 220px;
+}
+
+input.botao:hover{
+    background-color: #00ffff;
+}
+
+#idRememberMe {
+    margin-top: 5px;
+}
+
+.botaoCancelar {
+    width: auto;
+    font-size: 12pt;
+    padding: 10px 5px;
+    background-color: #f44336;
+}
+
+.botaoCancelar:hover {
+    background-color: yellow;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .botaoCancelar {
+        width: 100%;
+    }
+}
